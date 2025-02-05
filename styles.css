@@ -11,11 +11,15 @@
     padding: 0;
 }
 
+/* CONTAINER */
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 4px; 
+    /* gap: 4px;  */
 }
+
+/* SIDEBAR */
 
 .sidebar {
     grid-column: 1/2;
@@ -57,10 +61,90 @@ li {
     padding: 4px;
 }
 
+/* HEADER */
+
 .header {
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 60px;
+    box-shadow: 0 4px 2px -2px lightgray;
+    z-index: 10; 
     
 }
+
+.search-bar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 14fr ;
+    align-items: center;
+}
+
+.bar {
+    background-color: lightgrey;
+    height: 27px;
+    width: 450px;
+    border-radius: 13px;
+}
+
+.icons {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    
+}
+
+.header-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header-greeting {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 55px 1fr;
+    gap: 3px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+    .greeting-hi-there {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 11px; 
+    }
+
+    .greeting-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+.header-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px; 
+        
+    button {
+      background-color: rgb(161, 216, 211);  
+      border-radius: 15px;
+      border: 0px;
+      height: 25px;
+      width: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      
+    }
+}
+
+/* MAIN */
 
 .main-content {
     grid-column: 2/3;
