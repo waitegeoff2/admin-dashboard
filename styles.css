@@ -4,6 +4,8 @@
     --body-text-size: 12px;
 }
 
+
+
 /*  */
 
 * {
@@ -30,6 +32,7 @@
     display: grid;
     grid-template-rows: 1fr 10fr;
     padding: 12px;
+    min-height: 100vh;
     
 }
 
